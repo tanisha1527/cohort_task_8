@@ -8,3 +8,53 @@ html,body {
     height: 100%;
     width: 100%;
 }
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 2fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "section section section"
+                         "bottom-left bottom-up bottom-right"
+                         "bottom-left bottom-down bottom-right";
+}
+
+.header {
+    background-color: transparent;
+    grid-area: header;
+}
+
+.section {
+    background-color: rgb(242, 239, 239);
+    grid-area: section;
+    border-radius: 20px;
+}
+
+.bottom-left {
+    background-color: lightblue;
+    grid-area: bottom-left;
+    border-radius: 20px;
+}
+
+.bottom-right {
+    background-color: rgb(245, 245, 98);
+    grid-area: bottom-right;
+    border-radius: 20px;
+}
+
+.bottom-up {
+    background-color: lightgray;
+    grid-area: bottom-up;
+    border-radius: 20px;
+}
+
+.bottom-down {
+    background-color: rgb(115, 137, 236);
+    grid-area: bottom-down;
+    border-radius: 20px;
+}
