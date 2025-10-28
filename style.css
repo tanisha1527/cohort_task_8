@@ -1,306 +1,421 @@
 @font-face {
-    font-family: Helvetica;
-    src: url(./HelveticaNeueRoman.otf);
+  font-family: Helvetica;
+  src: url(./HelveticaNeueRoman.otf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
 }
 
-html,body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 main {
-    height: 100%;
-    width: 100%;
-    background-color: white;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 .hero-section {
-    background-color: white;
-    display: grid;
-    gap: 10px;
-    padding: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 5fr 4fr 4fr;
-    grid-template-areas: "header header header"
-                         "section section section"
-                         "bottom-left bottom-up bottom-right"
-                         "bottom-left bottom-down bottom-right";
+  background-color: white;
+  display: grid;
+  gap: 10px;
+  padding: 20px 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 5fr 4fr 4fr;
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "bottom-left bottom-up bottom-right"
+    "bottom-left bottom-down bottom-right";
 }
 
 .header {
-    background-color: transparent;
-    grid-area: header;
+  background-color: transparent;
+  grid-area: header;
 }
 
 .section {
-    background-color: transparent;
-    grid-area: section;
-    border-radius: 20px;
-    padding: 40px 0px;
+  background-color: transparent;
+  grid-area: section;
+  border-radius: 20px;
+  padding: 40px 0px;
 }
 
 .bottom-left {
-    background-color: transparent;
-    grid-area: bottom-left;
-    border-radius: 20px;
+  background-color: transparent;
+  grid-area: bottom-left;
+  border-radius: 20px;
 }
 
 .bottom-right {
-    background-color: transparent;
-    grid-area: bottom-right;
-    border-radius: 20px;
+  background-color: transparent;
+  grid-area: bottom-right;
+  border-radius: 20px;
 }
 
 .bottom-up {
-    background-color: rgb(5, 112, 235);
-    grid-area: bottom-up;
-    border-radius: 20px;
-    padding: 30px 40px;
+  background-color: rgb(5, 112, 235);
+  grid-area: bottom-up;
+  border-radius: 20px;
+  padding: 30px 40px;
 }
 
 .bottom-down {
-    background-color: black;
-    grid-area: bottom-down;
-    border-radius: 20px;
-    padding: 30px 40px;
+  background-color: black;
+  grid-area: bottom-down;
+  border-radius: 20px;
+  padding: 30px 40px;
 }
 
 nav {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
 
 nav .nav-left {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
 .nav-left img {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 .nav-left h4 {
-    margin-top: 8px;
-    font-size: 20px;
-    font-weight: 600;
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 nav .nav-center {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 nav .nav-center a {
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
 }
 
 nav .nav-center a i {
-    margin-left: 8px;
-    font-size: 16px;
+  margin-left: 8px;
+  font-size: 16px;
 }
 
 nav .nav-right {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-right button {
-    padding: 14px 16px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 14px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .nav-right .btn-1 {
-    color: rgb(5, 112, 235);
-    background-color: white;
-    border: 2px solid rgb(5, 112, 235);
+  color: rgb(5, 112, 235);
+  background-color: white;
+  border: 2px solid rgb(5, 112, 235);
 }
 
 .nav-right .btn-1:hover {
-    background-color:  rgb(5, 112, 235);
-    color: white;
+  background-color: rgb(5, 112, 235);
+  color: white;
 }
 
 .nav-right .btn-2 {
-    color: white;
-    background-color: rgb(5, 112, 235);
-    border: 2px solid transparent;
+  color: white;
+  background-color: rgb(5, 112, 235);
+  border: 2px solid transparent;
 }
 
 .nav-right .btn-2:hover {
-    background-color: white;
-    color:  rgb(5, 112, 235);
-    border: 2px solid  rgb(5, 112, 235);
+  background-color: white;
+  color: rgb(5, 112, 235);
+  border: 2px solid rgb(5, 112, 235);
 }
 
 .section h1 {
-    font-size: 70px;
-    font-weight: 400;
-    margin: 20px 0px;
-    text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  margin: 20px 0px;
+  text-align: center;
 }
 
 .section p {
-    font-size: 18px;
-    text-align: center;
-    line-height: 1.5;
-    color: gray;
-    margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+  color: gray;
+  margin-bottom: 20px;
 }
 
 .section .section-btn {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0px;
 }
 
 .section button {
-    padding: 20px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .section .btn-3 {
-    background-color: rgb(5, 112, 235);
-    color: white;
-    border: 2px solid transparent;
+  background-color: rgb(5, 112, 235);
+  color: white;
+  border: 2px solid transparent;
 }
 
 .section .btn-3:hover {
-    background-color: white;
-    color:  rgb(5, 112, 235);
-    border: 2px solid  rgb(5, 112, 235);
+  background-color: white;
+  color: rgb(5, 112, 235);
+  border: 2px solid rgb(5, 112, 235);
 }
 
 .section .btn-4 {
-    background-color: white;
-    color: rgb(5, 112, 235);
-    border: 2px solid rgb(5, 112, 235);
+  background-color: white;
+  color: rgb(5, 112, 235);
+  border: 2px solid rgb(5, 112, 235);
 }
 
 .section .btn-4:hover {
-    background-color:  rgb(5, 112, 235);
-    color: white;
+  background-color: rgb(5, 112, 235);
+  color: white;
 }
 
 .section .btn-3 i {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .bottom-left img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    object-position: top;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .bottom-right img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    object-position: top;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .bottom-up h4 {
-    font-size: 14px;
-    font-weight: 100;
-    color: rgb(253, 252, 252);
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(253, 252, 252);
 }
 
 .bottom-up h1 {
-    font-size: 60px;
-    font-weight: 100;
-    color: white;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
 }
 
 .bottom-down h4 {
-    font-size: 14px;
-    font-weight: 100;
-    color: rgb(253, 252, 252);
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(253, 252, 252);
 }
 
 .bottom-down h1 {
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    color: white;
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .section_1 {
-    height: auto;
-    width: 100%;
-    background-color: white;
-    padding: 40px 30px;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 80px;
 }
 
 .section_1 .section-top {
-    padding: 0px 80px;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 
 .section-top button {
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: black;
-    border: 2px solid black;
-    background-color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
 }
 
 .section-top h1 {
-    font-size: 40px;
-    font-weight: 100;
-    color: rgb(157, 154, 154);
-    margin-top: 20px;
+  font-size: 34px;
+  font-weight: 100;
+  color: rgb(157, 154, 154);
+  margin: 20px 0px;
 }
 
 .section_1 .section-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 0px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .section-bottom div {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .section-bottom div h1 {
-    font-size: 50px;
-    font-weight: 300;
+  font-size: 50px;
+  font-weight: 300;
 }
 
 .section-bottom div h4 {
-    font-size: 16px;
-    color: rgb(119, 118, 118);
-    padding-top: 10px;
+  font-size: 16px;
+  color: rgb(119, 118, 118);
+  padding-top: 10px;
 }
 
+.section_2 {
+  height: 700px;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  gap: 10px;
+  padding: 40px 80px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "section-left section-top-left section-top-right"
+    "section-left section-down-left section-down-right";
+}
 
+.section-left {
+  background-color: transparent;
+  grid-area: section-left;
+}
 
+.section-top-left {
+  background-color: rgb(242, 242, 242);
+  grid-area: section-top-left;
+  border-radius: 20px;
+}
+
+.section-top-right {
+  background-color: rgb(242, 242, 242);
+  grid-area: section-top-right;
+  border-radius: 20px;
+}
+
+.section-down-left {
+  background-color: rgb(242, 242, 242);
+  grid-area: section-down-left;
+  border-radius: 20px;
+}
+
+.section-down-right {
+  background-color: rgb(242, 242, 242);
+  grid-area: section-down-right;
+  border-radius: 20px;
+}
+
+.section-left .btn-5 {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.section-left .btn-6 {
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  color: white;
+  background-color: rgb(5, 112, 235);
+  margin-bottom: 40px;
+  margin-top: 54%;
+  cursor: pointer;
+}
+
+.section-left .btn-6 i {
+  margin-left: 10px;
+}
+
+.section-left .btn-6:hover {
+  background-color: white;
+  color: rgb(5, 112, 235);
+  border: 2px solid rgb(5, 112, 235);
+}
+
+.section-left h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.section-left h4 {
+  font-size: 16px;
+  margin-right: 80px;
+}
+
+.section-top-left,
+.section-top-right,
+.section-down-left,
+.section-down-right {
+  padding: 40px;
+  cursor: pointer;
+}
+
+.section_2 .icon-box {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: rgb(5, 112, 235);
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_2 h3 {
+  font-size: 24px;
+  margin-top: 60px;
+}
+
+.section_2 h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgb(181, 178, 178);
+}
