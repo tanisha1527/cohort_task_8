@@ -22,8 +22,6 @@ main {
 }
 
 .hero-section {
-    height: 900px;
-    width: 100%;
     background-color: white;
     display: grid;
     gap: 10px;
@@ -45,7 +43,7 @@ main {
     background-color: transparent;
     grid-area: section;
     border-radius: 20px;
-    padding: 80px 0px;
+    padding: 40px 0px;
 }
 
 .bottom-left {
