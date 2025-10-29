@@ -509,3 +509,54 @@ nav .nav-right {
   object-fit: cover;
   object-position: top;
 }
+
+.section_4 {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.left-text .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-text .logo img {
+  height: 50px;
+  width: 150px;
+}
+
+.left-text h4 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 60px 0px;
+}
+
+.left-text .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-text .text h3 {
+    font-size: 20px;
+    color: black;
+}
+
+.left-text .text h4 {
+    font-size: 22px;
+    color: rgb(154, 152, 152);
+}
+
+.right-image img {
+    height: 100%;
+    width: 600px;
+    border-radius: 20px;
+}
