@@ -410,7 +410,7 @@ nav .nav-right {
 }
 
 .section_2 h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 60px;
 }
 
@@ -418,4 +418,94 @@ nav .nav-right {
   font-size: 16px;
   margin-top: 20px;
   color: rgb(181, 178, 178);
+}
+
+.section_3 {
+  height: 800px;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  gap: 10px;
+  padding: 80px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 2fr;
+  grid-template-areas:
+    "section3-top section3-top"
+    "section3-bottom-left section3-bottom-right";
+}
+
+.section3-top {
+  background-color: transparent;
+  grid-area: section3-top;
+}
+
+.section3-bottom-left {
+  background-color: transparent;
+  grid-area: section3-bottom-left;
+  border-radius: 20px;
+}
+
+.section3-bottom-right {
+  background-color: transparent;
+  grid-area: section3-bottom-right;
+  border-radius: 20px;
+}
+
+.section3-top .btn-7 {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.section3-top div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.section3-top div h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.section3-top .btn-8 {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  color: white;
+  background-color: rgb(5, 112, 235);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.section3-top .btn-8:hover {
+  background-color: white;
+  color: rgb(5, 112, 235);
+  border: 2px solid rgb(5, 112, 235);
+}
+
+.section3-top .btn-8 i {
+  margin-left: 10px;
+}
+
+.section3-bottom-left img {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.section3-bottom-right img {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
 }
