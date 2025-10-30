@@ -234,6 +234,7 @@ nav .nav-right {
   font-size: 60px;
   font-weight: 100;
   color: white;
+  margin-top: 100px;
 }
 
 .bottom-down h4 {
@@ -625,6 +626,13 @@ nav .nav-right {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.contact-us div .social-media a:hover {
+    color: rgb(5, 112, 235);
+    background-color: white;
+    border: 1px solid rgb(5, 112, 235);
 }
 
 .form {
