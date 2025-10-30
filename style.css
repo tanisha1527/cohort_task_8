@@ -573,119 +573,259 @@ nav .nav-right {
 }
 
 .contact-us {
-    padding: 40px;
+  padding: 40px;
 }
 
 .contact-us button {
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background-color: white;
-    margin-bottom: 40px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: white;
+  margin-bottom: 40px;
 }
 
 .contact-us h2 {
-    font-size: 36px;
-    font-weight: 100;
-    margin-bottom: 80px;
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 80px;
 }
 
 .contact-us .contact-details {
-    margin-top: 36%;
+  margin-top: 36%;
 }
 
 .contact-details div h3 {
-    font-size: 22px;
-    color: rgb(179, 178, 178);
-    margin-bottom: 20px;
+  font-size: 22px;
+  color: rgb(179, 178, 178);
+  margin-bottom: 20px;
 }
 
 .contact-details div h4 {
-    font-size: 22px;
-    color: black;
-    margin: 20px 0px;
+  font-size: 22px;
+  color: black;
+  margin: 20px 0px;
 }
 
 .contact-us div .social-media {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
-    margin: 5px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0px;
 }
 
 .contact-us div .social-media a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border: 1px solid rgb(171, 170, 170);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(171, 170, 170);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 .form {
-    padding: 40px;
+  padding: 40px;
 }
 
 .form form {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
 form .name {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 form .name div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 form input {
-    font-size: 16px;
-    color: rgb(247, 244, 244);
-    background-color: white;
-    padding: 20px 20px;
-    border: 2px solid rgb(228, 228, 228);
-    border-radius: 30px;
-    margin: 20px 0px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  padding: 20px 20px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 30px;
+  margin: 20px 0px;
 }
 
 form textarea {
-    height: 200px;
-    font-size: 16px;
-    color: rgb(247, 244, 244);
-    background-color: white;
-    padding: 20px 20px;
-    border: 2px solid rgb(228, 228, 228);
-    border-radius: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  height: 200px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  padding: 20px 20px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 form button {
-    font-size: 16px;
-    color: rgb(247, 244, 244);
-    background-color: rgb(5, 112, 235);
-    padding: 20px 20px;
-    border: 2px solid rgb(228, 228, 228);
-    border-radius: 30px;
-    cursor: pointer;
+  font-size: 16px;
+  color: rgb(247, 244, 244);
+  background-color: rgb(5, 112, 235);
+  padding: 20px 20px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 form button:hover {
-    color: rgb(247, 244, 244);
-    background-color: rgb(7, 119, 248);
+  color: rgb(247, 244, 244);
+  background-color: rgb(7, 119, 248);
 }
 
+.footer {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  padding: 0px 80px;
+  padding-top: 60px;
+}
+
+.footer-section {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  border-radius: 30px;
+  padding: 60px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.footer-left .footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-left img {
+  height: 40px;
+  width: 40px;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+}
+
+.footer-left h4 {
+  font-size: 26px;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-subscribe {
+  display: flex;
+  margin: 20px 0px;
+  gap: 10px;
+}
+
+.footer-subscribe input {
+  font-size: 16px;
+  color: white;
+  background-color: rgb(68, 68, 68);
+  padding: 16px 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+.footer-subscribe input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent; 
+}
+
+
+.footer-subscribe button {
+  font-size: 16px;
+  color: rgb(247, 244, 244);
+  background-color: rgb(5, 112, 235);
+  padding: 16px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  background-color: rgb(4, 118, 248);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-right div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-right a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  color: #a6a6a8;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom div h4 {
+    font-size: 14px;
+    color: rgb(204, 202, 202);
+}
+
+.footer-bottom div a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.footer-bottom div a:hover {
+    color: rgb(5, 112, 235);
+    background-color: white;
+}
